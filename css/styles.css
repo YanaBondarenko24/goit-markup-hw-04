@@ -225,7 +225,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 :focus {
@@ -304,16 +304,16 @@ img {
   padding-top: 32px;
   margin-bottom: 8px;
 }
-.team-social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
 .social-icons-container {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 32px;
+}
+.team-social {
+  display: flex;
+  gap: 24px;
 }
 .team-social-list-item {
   width: 40px;
@@ -385,6 +385,7 @@ img {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
@@ -409,7 +410,7 @@ img {
   color: #f4f4fd;
   padding: 40px 32px;
 
-  transition: tranform 500ms ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover .overlay {
   transform: translateY(0);
@@ -443,18 +444,21 @@ img {
 .footer-container {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .footer-logo-container {
 }
 .footer-social {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.social-icons-container {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 16px;
+}
+.footer-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .social-list-item {
   width: 40px;
@@ -471,7 +475,8 @@ img {
 .social-list-text {
   margin-bottom: 16px;
 }
-.social-links.footer-links {
+.footer-social-links {
+  flex-direction: row;
   width: 100%;
   height: 100%;
   display: flex;
@@ -481,8 +486,8 @@ img {
   color: #f4f4fd;
   transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-links:hover,
-.footer-links:focus {
+.footer-social-links:hover,
+.footer-social-links:focus {
   background-color: #31d0aa;
 }
 .social-links-svg {
