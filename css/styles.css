@@ -464,7 +464,7 @@ img {
 .footer-social-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .social-list-item {
   width: 40px;
